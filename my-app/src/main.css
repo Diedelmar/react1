@@ -2,60 +2,65 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 
 :root {
-    --clr-main: #a0ee6c;
-    --clr-main-light: #efdaf9;
+    --clr-main: #f45c42;
+    --clr-main-light: #fed7c4;
 }
 
 .container {
-    max-width: 1140px;
-    padding-inline: 1.5rem;
+    max-width: 1200px;
+    padding: 0 20px;
     margin: 0 auto;
 }
 
 .main-title {
     margin-top: 2rem;
+    font-size: 2.5rem;
+    color: var(--clr-main);
 }
 
 .navbar {
-    padding: 2rem;
+    padding: 1.5rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--clr-main);
-    border-bottom: 3px solid black;
+    background-color: white;
+    border-bottom: 3px solid var(--clr-main);
 }
 
 .logo {
     text-decoration: none;
-    color: black;
+    color: var(--clr-main);
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .menu {
     list-style-type: none;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .menu-link {
     text-decoration: none;
     color: black;
     font-size: 1.2rem;
+    transition: color 0.2s;
 }
 
 .menu-link:hover {
-    text-decoration: underline;
+    color: var(--clr-main);
 }
 
 .productos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    padding-block: 2rem;
+    padding: 2rem 0;
 }
 
 .producto {
@@ -63,19 +68,20 @@
     flex-direction: column;
     border-radius: 1rem;
     overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .producto > div {
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: var(--clr-main-light);
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 1rem;
 }
 
 .producto > img {
     width: 100%;
-    aspect-ratio: 2/1;
+    max-height: 200px;
     object-fit: cover;
 }
 
@@ -83,19 +89,17 @@
     text-decoration: none;
     background-color: var(--clr-main);
     color: white;
-    padding: .5rem;
-    width: max-content;
-    border-radius: .5rem;
-    transition: .2s;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
 }
 
 .producto .ver-mas:hover {
-    background-color: black;
-    color: white;
+    background-color: #d43f2a;
 }
 
 .producto-detalle {
-    padding-block: 2rem;
+    padding: 2rem 0;
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 2rem;
@@ -107,73 +111,73 @@
 
 .producto-detalle-info h3 {
     font-size: 2rem;
+    color: var(--clr-main);
 }
 
 .categoria {
-    font-size: .8rem;
-    color: #424242;
+    font-size: 1rem;
+    color: #777;
     margin-top: 1rem;
 }
 
 .precio {
     font-size: 2rem;
     margin-top: 2rem;
-    font-weight: 600;
+    font-weight: bold;
+    color: var(--clr-main);
 }
 
 .item-count {
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 
 .item-count button, .agregar-al-carrito, .enviar {
     background-color: var(--clr-main);
     border: 0;
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     color: white;
-    border-radius: .5rem;
+    border-radius: 50%;
     cursor: pointer;
     font-size: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    line-height: 1;
-    border: 2px solid var(--clr-main);
-    transition: .2s;
+    transition: background-color 0.2s, color 0.2s;
 }
 
 .item-count button:hover, .agregar-al-carrito:hover, .enviar:hover {
-    background-color: white;
-    color: black;
+    background-color: #d43f2a;
 }
 
 .agregar-al-carrito, .enviar {
     width: auto;
-    height: auto;
-    margin-top: 1rem;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .formulario {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 1rem;
     align-items: flex-start;
 }
 
 .formulario input {
-    padding: .5rem;
-    width: 18rem;
-    border-radius: .5rem;
-    border: 2px solid black;
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 2px solid #ddd;
+    font-size: 1rem;
+    transition: border-color 0.2s;
 }
 
 .formulario input:focus {
     outline: 0;
-    border: 2px solid var(--clr-main);
-    outline: 2px solid var(--clr-main);
+    border-color: var(--clr-main);
 }
