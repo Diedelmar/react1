@@ -1,0 +1,39 @@
+[
+    {
+      "id": 1,
+      "titulo": "Muñeca",
+      "descripcion": "Muñeca de juguete con ropa intercambiable.",
+      "categoria": "Juguetes para niñas",
+      "imagen": "imagen1.jpg",
+      "precio": 15999,
+      "stock": 50
+    },
+    {
+      "id": 2,
+      "titulo": "Carro de Carreras",
+      "descripcion": "Carro de carreras de alta velocidad.",
+      "categoria": "Juguetes para niños",
+      "imagen": "imagen2.jpg",
+      "precio": 12549,
+      "stock": 30
+    },
+    {
+      "id": 3,
+      "titulo": "Rompecabezas",
+      "descripcion": "Rompecabezas de 1000 piezas con paisaje hermoso.",
+      "categoria": "Juegos de mesa",
+      "imagen": "imagen3.jpg",
+      "precio": 1999,
+      "stock": 20
+    },
+    {
+      "id": 1,
+      "titulo": "Bicicletas",
+      "descripcion": "Todos los tamaños y para todo tipo de terreno.",
+      "categoria": "Juegos al aire libre",
+      "imagen": "imagen1.jpg",
+      "precio": 40000,
+      "stock": 50
+    }
+    
+  ]
