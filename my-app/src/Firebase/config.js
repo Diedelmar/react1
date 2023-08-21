@@ -1,5 +1,6 @@
 import { initializeApp } from "firebase/app";
-import { collection, getDocs } from 'firebase/firestore/lite';
+import { getFirestore } from "firebase/firestore/lite"; 
+
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyBC-X74XUOf_Dqsk47EL2n6oDPehXd3AkA",
@@ -13,5 +14,5 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
-const collectionRef = collection(db, 'productos');
-export default db; 
+
+export default db;

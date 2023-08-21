@@ -3,7 +3,6 @@ import { toCapital } from "../Ayuda/toCapital"
 import ItemCount from "./ItemCount"
 import { CartContext } from "../context/Context";
 
-
 const ItemDetail = ( {item} ) => {
 
     const { carrito, agregarAlCarrito } = useContext(CartContext);
