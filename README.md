@@ -20,3 +20,34 @@ Asegúrate de tener instalado Node.js y npm en tu sistema. Puedes descargarlos d
 ```bash
 git clone https://github.com/Diedelmar/react1.git
 cd react1
+Ejecución
+Ejecuta la aplicación en modo de desarrollo:
+
+bash
+Copy code
+npm start
+La aplicación estará disponible en http://localhost:3000.
+
+##Despliegue
+Para implementar la aplicación en producción, puedes usar la plataforma de alojamiento de Firebase:
+
+##Instala la herramienta de línea de comandos de Firebase:
+bash
+Copy code
+npm install -g firebase-tools
+#Inicia sesión en tu cuenta de Firebase:
+bash
+Copy code
+firebase login
+Configura tu proyecto Firebase:
+bash
+Copy code
+firebase init
+Despliega la aplicación:
+bash
+Copy code
+firebase deploy
+##La aplicación estará disponible en la URL proporcionada por Firebase.
+
+Contribuciones
+Si deseas contribuir a este proyecto, siéntete libre de hacer un fork y enviar pull requests con tus mejoras.
